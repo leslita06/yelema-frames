@@ -7,3 +7,8 @@ Contenus interactifs des analyses Yelema (Mstudio, phase EIR), rendus en HTML au
 - `service-blueprint.html` — Service Blueprint Agent RH / OHADA (Task 10)
 
 Sources React/TSX issues de Dust, transpilées via esbuild ; UI shadcn/motion shimées localement.
+
+## Ajout 11/06/2026
+- `quadrant2.html` — Quadrant 2 : ready-to-go × Build & Operate (« comment on gagne »)
+- `quadrant3.html` — Quadrant 3 : ready-to-go × profondeur métier
+Axe readiness scoré heuristiquement le 11/06 (Business Model + RUN des fiches 00.3) ; sources `_quadrant2.tsx` / `_quadrant3.tsx`.
