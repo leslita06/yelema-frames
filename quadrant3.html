@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yelema — Quadrant 3 : ready-to-go × profondeur métier</title>
+<meta name="description" content="Quadrant stratégique interactif des 67 comparables selon verticalisation et Build & Operate">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  background:"hsl(var(--background))", foreground:"hsl(var(--foreground))",
+  card:"hsl(var(--card))", "card-foreground":"hsl(var(--card-foreground))",
+  popover:"hsl(var(--popover))", muted:"hsl(var(--muted))", "muted-foreground":"hsl(var(--muted-foreground))",
+  accent:"hsl(var(--accent))", "accent-foreground":"hsl(var(--accent-foreground))",
+  border:"hsl(var(--border))", input:"hsl(var(--input))", ring:"hsl(var(--ring))",
+  primary:"hsl(var(--primary))", "primary-foreground":"hsl(var(--primary-foreground))",
+  secondary:"hsl(var(--secondary))", "secondary-foreground":"hsl(var(--secondary-foreground))",
+  destructive:"hsl(var(--destructive))",
+  "chart-1":"var(--chart-1)","chart-2":"var(--chart-2)","chart-3":"var(--chart-3)",
+  "chart-4":"var(--chart-4)","chart-5":"var(--chart-5)"
+} } } };
+</script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0?external=react",
+    "motion/react": "./motion.js",
+    "framer-motion": "./motion.js",
+    "shadcn": "./shadcn.js"
+  }
+}
+</script>
+<style>
+  :root {
+    --background:0 0% 100%; --foreground:218 42% 15%;
+    --card:0 0% 100%; --card-foreground:218 42% 15%;
+    --popover:0 0% 100%;
+    --muted:210 40% 96%; --muted-foreground:215 16% 42%;
+    --accent:210 40% 96%; --accent-foreground:218 42% 15%;
+    --border:214 32% 88%; --input:214 32% 88%; --ring:215 20% 60%;
+    --primary:218 48% 20%; --primary-foreground:210 40% 98%;
+    --secondary:210 40% 96%; --secondary-foreground:218 42% 15%;
+    --destructive:0 72% 51%;
+    --chart-1:hsl(33 80% 54%); --chart-2:hsl(160 61% 30%); --chart-3:hsl(218 48% 20%);
+    --chart-4:hsl(43 74% 49%); --chart-5:hsl(2 72% 54%);
+  }
+  body { margin:0; background:#f3f4f6; color:hsl(var(--foreground)); font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  #root { min-height:100vh; }
+  .yelema-loading { display:flex; align-items:center; justify-content:center; height:100vh; color:#64748b; font-size:14px; }
+</style>
+</head>
+<body>
+<div id="root"><div class="yelema-loading">Chargement du contenu interactif Yelema…</div></div>
+<script type="module">
+  import React from "react";
+  import { createRoot } from "react-dom/client";
+  import Comp from "./quadrant3.js";
+  const el = document.getElementById("root"); el.innerHTML = "";
+  createRoot(el).render(React.createElement(Comp));
+</script>
+</body>
+</html>
